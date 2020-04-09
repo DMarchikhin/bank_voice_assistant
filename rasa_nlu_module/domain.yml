@@ -1,0 +1,44 @@
+intents:
+  - balance_search
+  - balance_inform
+  - greet
+  - thanks
+  - goodbye
+
+entities:
+  - product
+  - product_type
+  - product_name
+
+slots:
+  product:
+    type: text
+  product_type:
+    type: text
+  product_name:
+    type: text
+  product_amount:
+    type: unfeaturized
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_product
+  - utter_default
+  - action_balance
+
+templates:
+  utter_greet:
+  - text: "Привет! Чем я могу помочь?"
+  utter_goodbye:
+  - text: "Рад была помочь."
+  utter_ask_product:
+  - text: "На какой карте хотите узнать баланс?"
+  utter_default:
+  - text: "Извиняюсь, не свосем понял вас. Можете повторить ваш запрос?"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
