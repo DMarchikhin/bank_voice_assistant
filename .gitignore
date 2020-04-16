@@ -1,1 +1,3 @@
 *.DS_Store
+rasa_nlu_module/models
+rasa_nlu_module/results

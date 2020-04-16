@@ -1,0 +1,13 @@
+{
+    "customers": [{
+        "id": 1,
+        "name": "Dmitry",
+        "products": [1, 2]
+    }],
+    "products": [{
+        "id": 1,
+        "product_name": "Вайт",
+        "product_type": "card",
+        "balance": 23000
+    }]
+}
