@@ -1,4 +1,4 @@
-## intent:balance_search
+ ## intent:balance_search
 - баланс
 - мой баланс
 - какой баланс?
@@ -36,6 +36,8 @@
 - какая сумма на счетах?
 - какая у меня сумма на балансе?
 - какая у меня сумма на счетах?
+
+<!-- 
 - баланс на [дебетовой](product_type) [карте](product)
 - баланс на [карте](product) [вайт](product_name)
 - баланс на [дебетовой](product_type) [карте](product) [вайт](product_name)
@@ -95,11 +97,27 @@
 - какая у меня сумма на [дебетовой](product_type) [карте](product) [вайт](product_name)?
 - какая сумма на балансе на [дебетовой](product_type) [карте](product)?
 - какая сумма на балансе на [карте](product) [вайт](product_name)?
-- какая сумма на балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-
-
+- какая сумма на балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)? -->
 
 ## intent:balance_inform
+- на [карте](product:card)
+- [карта](product:card)
+- на [дебетовой](product_type:debt)
+- [дебетовая](product_type:debt)
+- на [дебетовой](product_type:debt) [карте](product:card)
+- [дебетовая](product_type:debt) [карта](product:card)
+- [карта](product:card) [дебетовая](product_type:debt)
+- на [обычной](product_type:debt) [карте](product:card)
+- [обычная](product_type:debt) [карта](product:card)
+- на [простой](product_type:debt) [карте](product:card)
+- [простая](product_type:debt) [карта](product:card)
+- на [кредитной](product_type:credit) [карте](product:card)
+- [кредитная](product_type:credit) [карта](product:card)
+- [карта](product:card) [кредитная](product_type:credit)
+
+<!-- ## intent:balance_inform
+- [карта](product)
+- [дебетовая](product_type)
 - [дебетовая](product_type) [карта](product)
 - [карта](product) [вайт](product_name)
 - [вайт](product_name) [карта](product)
@@ -163,7 +181,7 @@
 - какая у меня сумма на [дебетовой](product_type) [карте](product) [вайт](product_name)?
 - какая сумма на балансе на [дебетовой](product_type) [карте](product)?
 - какая сумма на балансе на [карте](product) [вайт](product_name)?
-- какая сумма на балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)?
+- какая сумма на балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)?  -->
 
 ## intent:greet
 - привет
@@ -178,6 +196,9 @@
 
 ## intent:thanks
 - спасибо
+- понял
+- ок
+- ясно
 - понятно, спасибо
 - большое спасибо
 - благодарю
@@ -194,3 +215,31 @@
 - выключи
 - конец
 - до встречи
+
+## intent:decline
+- не надо
+- ой не надо
+- больше не надо
+- отмена
+- нет
+- стоп
+- назад
+
+## synonym:debt
+- дебетовая
+- обычная
+- обычной
+- простой
+- простая
+- дебетовой
+- стандартная
+- стандартной 
+
+## synonym:credit
+- кредитной
+- кредитная
+- кредитка
+
+## synonym:card
+- карта
+- карте

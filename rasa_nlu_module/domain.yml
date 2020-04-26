@@ -4,6 +4,7 @@ intents:
   - greet
   - thanks
   - goodbye
+  - decline
 
 entities:
   - product
@@ -12,9 +13,11 @@ entities:
 
 slots:
   product:
-    type: text
+    type: unfeaturized
+    auto_fill: false
   product_type:
-    type: text
+    type: unfeaturized
+    auto_fill: false
   product_name:
     type: text
   product_amount:
@@ -23,17 +26,29 @@ slots:
 actions:
   - utter_greet
   - utter_goodbye
+  - utter_decline
   - utter_ask_product
+  - utter_ask_product_type
   - utter_default
   - action_balance
+
+forms:
+  - balance_form
 
 templates:
   utter_greet:
   - text: "Привет! Чем я могу помочь?"
+  - text: "Приветствую! Что я могу сделать для вас?"
   utter_goodbye:
-  - text: "Рад была помочь."
+  - text: "Рад был помочь"
+  - text: "Всегда рад помочь"
+  utter_decline:
+  - text: "Хорошо! Я могу что-то ещё для вас сделать?"
+  - text: "Что ещё я могу для вас сделать?"
   utter_ask_product:
-  - text: "На какой карте хотите узнать баланс?"
+  - text: "На каком продукте хотите узнать баланс?"
+  utter_ask_product_type:
+  - text: "На какой карте?"
   utter_default:
   - text: "Извиняюсь, не свосем понял вас. Можете повторить ваш запрос?"
 
