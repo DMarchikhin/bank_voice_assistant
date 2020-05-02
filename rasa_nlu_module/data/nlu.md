@@ -37,67 +37,107 @@
 - какая у меня сумма на балансе?
 - какая у меня сумма на счетах?
 
-<!-- 
-- баланс на [дебетовой](product_type) [карте](product)
-- баланс на [карте](product) [вайт](product_name)
-- баланс на [дебетовой](product_type) [карте](product) [вайт](product_name)
-- мой баланс на [дебетовой](product_type) [карте](product)
-- мой баланс на [карте](product) [вайт](product_name)
-- мой баланс на [дебетовой](product_type) [карте](product) [вайт](product_name)
-- какой баланс на [дебетовой](product_type) [карте](product)?
-- какой баланс на [карте](product) [вайт](product_name)?
-- какой баланс на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- какой мой баланс на [дебетовой](product_type) [карте](product)?
-- какой мой баланс на [карте](product) [вайт](product_name)?
-- какой мой баланс на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- что на [дебетовой](product_type) [карте](product)?
-- что на [карте](product) [вайт](product_name)?
-- что на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- сколько денег на [дебетовой](product_type) [карте](product)?
-- сколько денег на [карте](product) [вайт](product_name)?
-- сколько денег на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- сколько денег на балансе на [дебетовой](product_type) [карте](product)?
-- сколько денег на балансе на [карте](product) [вайт](product_name)?
-- сколько денег на балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- сколько денег на моём балансе на [дебетовой](product_type) [карте](product)?
-- сколько денег на моём балансе на [карте](product) [вайт](product_name)?
-- сколько денег на моём балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- сколько рублей на [дебетовой](product_type) [карте](product)?
-- сколько рублей на [карте](product) [вайт](product_name)?
-- сколько рублей на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- сколько рублей на балансе на [дебетовой](product_type) [карте](product)?
-- сколько рублей на балансе на [карте](product) [вайт](product_name)?
-- сколько рублей на балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- сколько рублей на моём балансе на [дебетовой](product_type) [карте](product)?
-- сколько рублей на моём балансе на [карте](product) [вайт](product_name)?
-- сколько рублей на моём балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- какой остаток на [дебетовой](product_type) [карте](product)?
-- какой остаток на [карте](product) [вайт](product_name)?
-- какой остаток на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- какой у меня остаток на [дебетовой](product_type) [карте](product)?
-- какой у меня остаток на [карте](product) [вайт](product_name)?
-- какой у меня остаток на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- какой остаток на балансе на [дебетовой](product_type) [карте](product)?
-- какой остаток на балансе на [карте](product) [вайт](product_name)?
-- какой остаток на балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- какой остаток у меня на балансе на [дебетовой](product_type) [карте](product)?
-- какой остаток у меня на балансе на [карте](product) [вайт](product_name)?
-- какой остаток у меня на балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- сколько на остатке на [дебетовой](product_type) [карте](product)?
-- сколько на остатке на [карте](product) [вайт](product_name)?
-- сколько на остатке на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- сколько у меня на остатке на [дебетовой](product_type) [карте](product)?
-- сколько у меня на остатке на [карте](product) [вайт](product_name)?
-- сколько у меня на остатке на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- какая сумма на [дебетовой](product_type) [карте](product)?
-- какая сумма на [карте](product) [вайт](product_name)?
-- какая сумма на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- какая у меня сумма на [дебетовой](product_type) [карте](product)?
-- какая у меня сумма на [карте](product) [вайт](product_name)?
-- какая у меня сумма на [дебетовой](product_type) [карте](product) [вайт](product_name)?
-- какая сумма на балансе на [дебетовой](product_type) [карте](product)?
-- какая сумма на балансе на [карте](product) [вайт](product_name)?
-- какая сумма на балансе на [дебетовой](product_type) [карте](product) [вайт](product_name)? -->
+## intent:balance_direct_search
+- баланс на [карте](product:card)
+- баланс на [дебетовой](product_type:debt) [карте](product:card)
+- баланс на [простой](product_type:debt) [карте](product:card)
+- баланс на [обычной](product_type:debt) [карте](product:card)
+- баланс на [стандартной](product_type:debt) [карте](product:card)
+- мой баланс на [карте](product:card)
+- мой баланс на [дебетовой](product_type:debt) [карте](product:card)
+- мой баланс на [простой](product_type:debt) [карте](product:card)
+- мой баланс на [обычной](product_type:debt) [карте](product:card)
+- мой баланс на [стандартной](product_type:debt) [карте](product:card)
+- какой баланс на [карте](product:card)?
+- какой баланс на [дебетовой](product_type:debt) [карте](product:card)?
+- какой баланс на [простой](product_type:debt) [карте](product:card)?
+- какой баланс на [обычной](product_type:debt) [карте](product:card)?
+- какой баланс на [стандартной](product_type:debt) [карте](product:card)?
+- какой мой баланс на [карте](product:card)?
+- какой мой баланс на [дебетовой](product_type:debt) [карте](product:card)?
+- какой мой баланс на [простой](product_type:debt) [карте](product:card)?
+- какой мой баланс на [обычной](product_type:debt) [карте](product:card)?
+- какой мой баланс на [стандартной](product_type:debt) [карте](product:card)?
+- что на [карте](product:card)?
+- что на [дебетовой](product_type:debt) [карте](product:card)?
+- что на [простой](product_type:debt) [карте](product:card)?
+- что на [обычной](product_type:debt) [карте](product:card)?
+- что на [стандартной](product_type:debt) [карте](product:card)?
+- сколько денег на [карте](product:card)?
+- сколько денег на [дебетовой](product_type:debt) [карте](product:card)?
+- сколько денег на [простой](product_type:debt) [карте](product:card)?
+- сколько денег на [обычной](product_type:debt) [карте](product:card)?
+- сколько денег на [стандартной](product_type:debt) [карте](product:card)?
+- сколько денег на балансе на [карте](product:card)?
+- сколько денег на балансе на [дебетовой](product_type:debt) [карте](product:card)?
+- сколько денег на балансе на [простой](product_type:debt) [карте](product:card)?
+- сколько денег на балансе на [обычной](product_type:debt) [карте](product:card)?
+- сколько денег на балансе на [стандартной](product_type:debt) [карте](product:card)?
+- сколько денег на моём балансе на [карте](product:card)?
+- сколько денег на моём балансе на [дебетовой](product_type:debt) [карте](product:card)?
+- сколько денег на моём балансе на [простой](product_type:debt) [карте](product:card)?
+- сколько денег на моём балансе на [обычной](product_type:debt) [карте](product:card)?
+- сколько денег на моём балансе на [стандартной](product_type:debt) [карте](product:card)?
+- сколько рублей на [карте](product:card)?
+- сколько рублей на [дебетовой](product_type:debt) [карте](product:card)?
+- сколько рублей на [простой](product_type:debt) [карте](product:card)?
+- сколько рублей на [обычной](product_type:debt) [карте](product:card)?
+- сколько рублей на [стандартной](product_type:debt) [карте](product:card)?
+- сколько рублей на балансе на [карте](product:card)?
+- сколько рублей на балансе на [дебетовой](product_type:debt) [карте](product:card)?
+- сколько рублей на балансе на [простой](product_type:debt) [карте](product:card)?
+- сколько рублей на балансе на [обычной](product_type:debt) [карте](product:card)?
+- сколько рублей на балансе на [стандартной](product_type:debt) [карте](product:card)?
+- сколько рублей на моём балансе на [карте](product:card)?
+- сколько рублей на моём балансе на [дебетовой](product_type:debt) [карте](product:card)?
+- сколько рублей на моём балансе на [простой](product_type:debt) [карте](product:card)?
+- сколько рублей на моём балансе на [обычной](product_type:debt) [карте](product:card)?
+- сколько рублей на моём балансе на [стандартной](product_type:debt) [карте](product:card)?
+- какой остаток на [карте](product:card)?
+- какой остаток на [дебетовой](product_type:debt) [карте](product:card)?
+- какой остаток на [простой](product_type:debt) [карте](product:card)?
+- какой остаток на [обычной](product_type:debt) [карте](product:card)?
+- какой остаток на [стандартной](product_type:debt) [карте](product:card)?
+- какой у меня остаток на [карте](product:card)?
+- какой у меня остаток на [дебетовой](product_type:debt) [карте](product:card)?
+- какой у меня остаток на [простой](product_type:debt) [карте](product:card)?
+- какой у меня остаток на [обычной](product_type:debt) [карте](product:card)?
+- какой у меня остаток на [стандартной](product_type:debt) [карте](product:card)?
+- какой остаток на балансе на [карте](product:card)?
+- какой остаток на балансе на [дебетовой](product_type:debt) [карте](product:card)?
+- какой остаток на балансе на [простой](product_type:debt) [карте](product:card)?
+- какой остаток на балансе на [обычной](product_type:debt) [карте](product:card)?
+- какой остаток на балансе на [стандартной](product_type:debt) [карте](product:card)?
+- какой остаток у меня на балансе на [карте](product:card)?
+- какой остаток у меня на балансе на [дебетовой](product_type:debt) [карте](product:card)?
+- какой остаток у меня на балансе на [простой](product_type:debt) [карте](product:card)?
+- какой остаток у меня на балансе на [обычной](product_type:debt) [карте](product:card)?
+- какой остаток у меня на балансе на [стандартной](product_type:debt) [карте](product:card)?
+- сколько на остатке на [карте](product:card)?
+- сколько на остатке на [дебетовой](product_type:debt) [карте](product:card)?
+- сколько на остатке на [простой](product_type:debt) [карте](product:card)?
+- сколько на остатке на [обычной](product_type:debt) [карте](product:card)?
+- сколько на остатке на [стандартной](product_type:debt) [карте](product:card)?
+- сколько у меня на остатке на [карте](product:card)?
+- сколько у меня на остатке на [дебетовой](product_type:debt) [карте](product:card)?
+- сколько у меня на остатке на [простой](product_type:debt) [карте](product:card)?
+- сколько у меня на остатке на [обычной](product_type:debt) [карте](product:card)?
+- сколько у меня на остатке на [стандартной](product_type:debt) [карте](product:card)?
+- какая сумма на [карте](product:card)?
+- какая сумма на [дебетовой](product_type:debt) [карте](product:card)?
+- какая сумма на [простой](product_type:debt) [карте](product:card)?
+- какая сумма на [обычной](product_type:debt) [карте](product:card)?
+- какая сумма на [стандартной](product_type:debt) [карте](product:card)?
+- какая у меня сумма на [карте](product:card)?
+- какая у меня сумма на [дебетовой](product_type:debt) [карте](product:card)?
+- какая у меня сумма на [простой](product_type:debt) [карте](product:card)?
+- какая у меня сумма на [обычной](product_type:debt) [карте](product:card)?
+- какая у меня сумма на [стандартной](product_type:debt) [карте](product:card)?
+- какая сумма на балансе на [карте](product:card)?
+- какая сумма на балансе на [дебетовой](product_type:debt) [карте](product:card)?
+- какая сумма на балансе на [простой](product_type:debt) [карте](product:card)?
+- какая сумма на балансе на [обычной](product_type:debt) [карте](product:card)?
+- какая сумма на балансе на [стандартной](product_type:debt) [карте](product:card)?
 
 ## intent:balance_inform
 - на [карте](product:card)

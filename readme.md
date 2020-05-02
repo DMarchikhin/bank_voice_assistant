@@ -5,6 +5,6 @@
 Requirements: pre-installed json-server and rasa.
 
 1. Train model `rasa train`
-2. Start json-server `json-server fake_server/db.json `
-3. Start rasa actions `rasa run actions`
+2. Start json-server `json-server fake_server/db.json`
+3. Start rasa actions `rasa run actions --port 8000`
 4. Start testing mode `rasa shell`

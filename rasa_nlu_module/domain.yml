@@ -1,5 +1,6 @@
 intents:
   - balance_search
+  - balance_direct_search
   - balance_inform
   - greet
   - thanks
@@ -13,11 +14,9 @@ entities:
 
 slots:
   product:
-    type: unfeaturized
-    auto_fill: false
+    type: text
   product_type:
-    type: unfeaturized
-    auto_fill: false
+    type: text
   product_name:
     type: text
   product_amount:
@@ -33,7 +32,7 @@ actions:
   - action_balance
 
 forms:
-  - balance_form
+  - balance_form_2
 
 templates:
   utter_greet:
@@ -51,8 +50,6 @@ templates:
   - text: "На какой карте?"
   utter_default:
   - text: "Извиняюсь, не свосем понял вас. Можете повторить ваш запрос?"
-
-
 
 session_config:
   session_expiration_time: 60

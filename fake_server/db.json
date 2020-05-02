@@ -7,12 +7,14 @@
     "products": [{
         "id": 1,
         "product_name": "Вайт",
-        "product_type": "card",
+        "product": "card",
+        "product_type": "debt",
         "balance": 23000
     }, {
         "id": 2,
         "product_name": "Эир",
+        "product": "card",
         "product_type": "credit",
-        "balance": 350000
+        "balance": 300000
     }]
 }
