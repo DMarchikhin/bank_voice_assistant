@@ -1,0 +1,42 @@
+{
+  "actions": [{
+    "description": "Default Welcome Intent",
+    "name": "MAIN",
+    "fulfillment": {
+      "conversationName": "welcome"
+    },
+    "intent": {
+      "name": "actions.intent.MAIN",
+      "trigger": {
+        "queryPatterns": [
+          "говорить с банком"
+        ]
+      }
+    }
+  }, {
+    "description": "Rasa Intent",
+    "name": "TEXT",
+    "fulfillment": {
+      "conversationName": "rasa_intent"
+    },
+    "intent": {
+      "name": "actions.intent.TEXT",
+      "trigger": {
+        "queryPatterns":[]
+      }
+    }
+  }],
+  "conversations": {
+    "welcome": {
+      "name": "welcome",
+      "url": "https://dad4faad.ngrok.io/webhooks/google_assistant/webhook",
+      "fulfillmentApiVersion": 2
+    },
+    "rasa_intent": {
+      "name": "rasa_intent",
+      "url": "https://dad4faad.ngrok.io/webhooks/google_assistant/webhook",
+      "fulfillmentApiVersion": 2
+    }
+  },
+  "locale": "ru"
+}

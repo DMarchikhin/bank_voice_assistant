@@ -49,7 +49,7 @@ templates:
   utter_ask_product_type:
   - text: "На какой карте?"
   utter_default:
-  - text: "Извиняюсь, не свосем понял вас. Можете повторить ваш запрос?"
+  - text: "Извиняюсь, не совсем понял вас. Можете повторить ваш запрос?"
 
 session_config:
   session_expiration_time: 60
